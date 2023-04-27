@@ -1,0 +1,105 @@
+  .search {
+    background-color: #ffffff;
+    height: 50vh;
+  }
+  .search__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;    
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .search__container__top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30vh; 
+    justify-content: center;       
+  }
+.search__container__toplefttext {
+  flex: 1 1 auto;
+  text-align: right;
+}
+.search__container--img{
+ flex: 0 0 auto;
+  transform: scale(0.4);
+}
+.search__container__toprighttext {
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+  .search__container__bottom {
+    text-align:start;
+  }
+
+  .search__container__bottom--form {
+    background-color: #4654e1;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search__container__bottom--input {
+    all: unset;
+    font: 14px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+
+  .search__container__bottom--form {
+    background-color: #4654e1;
+    width: 300px;
+    height: 44px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search__container__bottom--input {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
+.search__container__bottom--button{
+    all: unset;
+    cursor: pointer;
+    width: 88px;
+    height: 44px;
+    background-color:  #2535df;
+    color: #ffffff  ;
+    border-radius: 0 5px 5px 0 ;
+    padding-left: 5px;
+}
+.search__container__bottom--button:hover{
+  background-color:  #747cd4;
+  
+}
+  ::placeholder {
+    color: #fff;
+    opacity: 0.7; 
+  }
+
+
+  /* Unresponsiveness :) */
+  @media screen and (max-width: 800px) {
+    .search__container  {height:  30vh; }
+    .search__container--img{transform: scale(0.2);}
+    .search__container__toplefttext {display: none; }
+    .search__container__toprighttext {display: none; }
+  }
